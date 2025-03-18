@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+  
+# Build output (thư mục build)
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Các file lock
+package-lock.json
+yarn.lock
+
+# Thư mục test coverage
+coverage/
+
+# Ẩn file môi trường (nếu có)
+.env
+.env.*.local
+
+# Các file cache
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+
+
