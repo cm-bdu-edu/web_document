@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
 
-  // Redirect if already logged in
+  // Chuyển hướng nếu người dùng đã đăng nhập
   React.useEffect(() => {
     if (currentUser) {
       navigate('/documents');
@@ -20,26 +20,26 @@ const Login = () => {
       await signInWithGoogle();
       navigate('/documents');
     } catch (error) {
-      toast.error('Failed to sign in with Google');
+      toast.error('Đăng nhập bằng Google thất bại');
       console.error(error);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-200 to-purple-300 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8 transform perspective-1000 hover:rotate-y-3 transition duration-700">
+        <div className="bg-white rounded-lg shadow-2xl p-8 transform hover:scale-105 transition duration-300">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Sign in to Web Document
+            Đăng nhập vào Tài liệu Web
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Manage your documents securely
+            Quản lý tài liệu của bạn một cách an toàn và hiệu quả
           </p>
         </div>
-        <div className="mt-8 space-y-6">
+        <div className="mt-8">
           <button
             onClick={handleGoogleSignIn}
-            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transform hover:scale-105 transition duration-300"
           >
             <span className="absolute left-0 inset-y-0 flex items-center pl-3">
               <svg className="h-5 w-5 text-blue-500 group-hover:text-blue-400" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ const Login = () => {
                 />
               </svg>
             </span>
-            Sign in with Google
+            Đăng nhập với Google
           </button>
         </div>
       </div>
