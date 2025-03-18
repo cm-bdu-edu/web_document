@@ -1,0 +1,59 @@
+# TÀI LIỆU MÔ TẢ YÊU CẦU DỰ ÁN
+
+## 1. Giới thiệu
+Trang web lưu trữ văn bản nội bộ giúp quản lý và lưu trữ tài liệu trực tuyến bằng cách sử dụng Google Drive làm nơi lưu trữ chính. Hệ thống hỗ trợ nhiều tài khoản Google Drive để mở rộng dung lượng lưu trữ. 
+
+Trang web sẽ được xây dựng dưới dạng web tĩnh với HTML, JavaScript, Tailwind CSS, và sử dụng Firebase Authentication để quản lý đăng nhập, phân quyền người dùng.
+
+## 2. Công nghệ sử dụng
+- **Ngôn ngữ & Framework**: HTML, JavaScript, Tailwind CSS
+- **Lưu trữ dữ liệu**: Google Drive API (hỗ trợ nhiều tài khoản)
+- **Xác thực & Phân quyền**: Firebase Authentication
+- **Triển khai**: GitHub Pages hoặc Firebase Hosting
+
+## 3. Chức năng chính
+### 3.1. Đăng nhập & phân quyền người dùng
+- Đăng nhập bằng tài khoản Google thông qua Firebase Authentication.
+- Phân quyền người dùng thành 2 loại:
+  - **Quản trị viên**: Có toàn quyền quản lý tài liệu, thêm/xóa tài khoản Google Drive.
+  - **Người dùng thông thường**: Chỉ có quyền tải lên/xem tài liệu được phân quyền.
+
+### 3.2. Quản lý tài liệu
+- **Tải lên tài liệu**: Người dùng có thể tải tài liệu lên Google Drive từ giao diện web.
+- **Tìm kiếm tài liệu**: Cung cấp thanh tìm kiếm nhanh theo tên tài liệu hoặc từ khóa.
+- **Xem trước tài liệu**: Hỗ trợ xem trước file PDF, Word, Excel trực tiếp trên trình duyệt.
+- **Phân loại theo thư mục**: Hỗ trợ tổ chức tài liệu theo thư mục.
+- **Tạo thư mục cho phòng ban**: Hỗ trợ tạo thư mục riêng biệt cho từng phòng ban để phân loại tài liệu dễ dàng.
+- **Chia sẻ tài liệu**: Cung cấp link chia sẻ nội bộ.
+- **Xóa tài liệu**: Chỉ quản trị viên có quyền xóa tài liệu.
+
+### 3.3. Quản lý tài khoản Google Drive
+- Thêm/xóa tài khoản Google Drive từ giao diện quản trị.
+- Xem tổng dung lượng và dung lượng đã sử dụng của từng tài khoản.
+- Hệ thống tự động phân bổ tải lên theo dung lượng khả dụng.
+
+## 4. UI/UX
+- Giao diện tối giản, dễ sử dụng với Tailwind CSS.
+- Trang dashboard trực quan, hiển thị danh sách tài liệu và trạng thái tải lên.
+- Responsive, hoạt động tốt trên cả mobile và desktop.
+
+## 5. Yêu cầu bảo mật
+- Firebase Authentication bảo vệ quyền truy cập.
+- Chỉ tài khoản được cấp quyền mới có thể truy cập tài liệu.
+- Hạn chế chia sẻ link tài liệu công khai.
+- Bảo vệ API key của Google Drive bằng môi trường serverless functions hoặc proxy.
+
+## 6. Kế hoạch triển khai
+- **Giai đoạn 1**: Thiết kế giao diện UI bằng HTML, Tailwind CSS.
+- **Giai đoạn 2**: Tích hợp Firebase Authentication.
+- **Giai đoạn 3**: Kết nối Google Drive API, phát triển chức năng quản lý tài liệu.
+- **Giai đoạn 4**: Kiểm thử và tối ưu hiệu suất.
+- **Giai đoạn 5**: Triển khai lên Firebase Hosting hoặc GitHub Pages.
+
+## 7. Mở rộng trong tương lai
+- Hỗ trợ thêm các dịch vụ lưu trữ khác như OneDrive, Dropbox.
+- Xây dựng API backend để kiểm soát truy cập chặt chẽ hơn.
+- Tích hợp AI để tự động phân loại tài liệu.
+
+
+

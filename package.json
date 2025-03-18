@@ -1,0 +1,33 @@
+{
+  "name": "web-document-management",
+  "version": "1.0.0",
+  "description": "Web Document Management System using Google Drive",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@heroicons/react": "^2.0.18",
+    "firebase": "^10.8.0",
+    "googleapis": "^105.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2",
+    "react-pdf": "^7.7.0",
+    "react-router-dom": "^6.22.1",
+    "react-toastify": "^11.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
